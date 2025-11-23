@@ -1,0 +1,210 @@
+@import url('http://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.container {
+    margin: 0 15px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.form-box.active {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5b86e5;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2355f7;
+}
+
+p {
+    text-align: center;
+    font-size: 14.5px;
+    margin-bottom: 10px;
+}
+
+p a {
+    color: #7494ec;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #a42834;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #5b86e5;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f0ff;
+}
+
+.approve-btn {
+    background-color: green;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reject-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.approve-btn:hover {
+    background-color: #228B22;
+}
+
+.reject-btn:hover {
+    background-color: #a10000;
+}
+
+
+.pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.approved {
+    color: green;
+    font-weight: bold;
+}
+
+.rejected {
+    color: red;
+    font-weight: bold;
+}
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.box {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.box button {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+@media(max-width:768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    table,
+    .form-box {
+        width: 100%;
+    }
+}
